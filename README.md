@@ -1,12 +1,12 @@
 # STAT 545A Mini Data Analysis Project M1 
-** _(Han Wang)_ **
+**_Han Wang_**
 ## Project Description
-  * ** Four datasets: **
+  * **Four datasets:**
     - 1: building_permits
     - 2: cancer_sample
     - 3: steam_games
     - 4: vancouver_trees
-  * ** Dataset selection: **
+  * **Dataset selection:**
     I chose the cancer_sample data set for Milestone 1 from the four datasets above because it has numeric and category variables.
     It is also easy to use and the data is in a tidy format, we can use this dataset to find the factors which affect the cancer diagnosis.
   * How to Engage in the Project
