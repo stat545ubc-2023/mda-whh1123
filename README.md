@@ -22,7 +22,7 @@ File Name | Purpose
 **Milestone_1.Rmd** | This is the main data analysis Rmd file for the initial analysis required for Milestone 1. The contents of this is identical to that of "Milestone_1.md".
 **Milestone_1.md** | This is the main data analysis markdown file for Milestone 1. The contents of this is identical to that of "Milestone_1.Rmd".
 **Milestone_1_files** | This is the folder that contains figures for initial analysis results.
-**Milestone_1.html** | This is the HTML file for Milestone 1.
+**[Milestone_1.html](https://stat545ubc-2023.github.io/mda-whh1123/Milestone_1.html)** | This is the HTML file for Milestone 1.
 
 
 
