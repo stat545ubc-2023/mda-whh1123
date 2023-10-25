@@ -25,7 +25,7 @@ File Name | Purpose
 **[Milestone_1.html](https://stat545ubc-2023.github.io/mda-whh1123/Milestone_1.html)** | This is the HTML file for Milestone 1.
 **[Milestone_2.Rmd](https://github.com/stat545ubc-2023/mda-whh1123/blob/main/Milestone_2.Rmd)** | This is the main data analysis Rmd file for the initial analysis required for Milestone 2. The contents of this is identical to that of "Milestone_2.md".
 **[Milestone_2.md](https://github.com/stat545ubc-2023/mda-whh1123/blob/main/Milestone_2.md)** | This is the main data analysis markdown file for Milestone 2. The contents of this is identical to that of "Milestone_2.Rmd".
-**Milestone_2_files** | This is the folder that contains figures for initial analysis results.
+**[Milestone_2_files](https://github.com/stat545ubc-2023/mda-whh1123/tree/main/mini-project-2_files/figure-gfm)** | This is the folder that contains figures for initial analysis results.
 **[Milestone_2.html](https://stat545ubc-2023.github.io/mda-whh1123/Milestone_2.html)** | This is the HTML file for Milestone 2.
 
 
