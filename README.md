@@ -28,7 +28,7 @@ File Name | Purpose
 **[mini-project-2_files](https://github.com/stat545ubc-2023/mda-whh1123/tree/main/mini-project-2_files/figure-gfm)** | This is the folder that contains figures for initial analysis results.
 **[Milestone_2.html](https://stat545ubc-2023.github.io/mda-whh1123/Milestone_2.html)** | This is the HTML file for Milestone 2.
 **[model.RDS](https://stat545ubc-2023.github.io/mda-whh1123/model.RDS)** | This is the data model file for Milestone 2.
-
+**[output](https://stat545ubc-2023.github.io/mda-whh1123/output)** | This is the output table data for Milestone 2.
 
 
 
