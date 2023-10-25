@@ -1,3 +1,6 @@
+Mini Data-Analysis Deliverable 1
+================
+
 # Welcome to your (maybe) first-ever data analysis project!
 
 And hopefully the first of many. Let’s get started:
@@ -10,14 +13,14 @@ And hopefully the first of many. Let’s get started:
     install.packages("devtools")
     devtools::install_github("UBC-MDS/datateachr")
 
-1.  Load the packages below.
+2.  Load the packages below.
 
-<!-- -->
+``` r
+library(datateachr)
+library(tidyverse)
+```
 
-    library(datateachr)
-    library(tidyverse)
-
-1.  Make a repository in the <https://github.com/stat545ubc-2023>
+3.  Make a repository in the <https://github.com/stat545ubc-2023>
     Organization. You can do this by following the steps found on canvas
     in the entry called [MDA: Create a
     repository](https://canvas.ubc.ca/courses/126199/pages/mda-create-a-repository).
@@ -28,22 +31,22 @@ And hopefully the first of many. Let’s get started:
 
 ## For Both Milestones
 
--   Each milestone has explicit tasks. Tasks that are more challenging
-    will often be allocated more points.
+- Each milestone has explicit tasks. Tasks that are more challenging
+  will often be allocated more points.
 
--   Each milestone will be also graded for reproducibility, cleanliness,
-    and coherence of the overall Github submission.
+- Each milestone will be also graded for reproducibility, cleanliness,
+  and coherence of the overall Github submission.
 
--   While the two milestones will be submitted as independent
-    deliverables, the analysis itself is a continuum - think of it as
-    two chapters to a story. Each chapter, or in this case, portion of
-    your analysis, should be easily followed through by someone
-    unfamiliar with the content.
-    [Here](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/)
-    is a good resource for what constitutes “good code”. Learning good
-    coding practices early in your career will save you hassle later on!
+- While the two milestones will be submitted as independent
+  deliverables, the analysis itself is a continuum - think of it as two
+  chapters to a story. Each chapter, or in this case, portion of your
+  analysis, should be easily followed through by someone unfamiliar with
+  the content.
+  [Here](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/)
+  is a good resource for what constitutes “good code”. Learning good
+  coding practices early in your career will save you hassle later on!
 
--   The milestones will be equally weighted.
+- The milestones will be equally weighted.
 
 ## For Milestone 1
 
@@ -67,11 +70,11 @@ submission.
 
 By the end of this milestone, you should:
 
--   Become familiar with your dataset of choosing
--   Select 4 questions that you would like to answer with your data
--   Generate a reproducible and clear report using R Markdown
--   Become familiar with manipulating and summarizing your data in
-    tibbles using `dplyr`, with a research question in mind.
+- Become familiar with your dataset of choosing
+- Select 4 questions that you would like to answer with your data
+- Generate a reproducible and clear report using R Markdown
+- Become familiar with manipulating and summarizing your data in tibbles
+  using `dplyr`, with a research question in mind.
 
 # Task 1: Choose your favorite dataset
 
@@ -79,42 +82,42 @@ The `datateachr` package by Hayley Boyce and Jordan Bourak currently
 composed of 7 semi-tidy datasets for educational purposes. Here is a
 brief description of each dataset:
 
--   *apt\_buildings*: Acquired courtesy of The City of Toronto’s Open
-    Data Portal. It currently has 3455 rows and 37 columns.
+- *apt_buildings*: Acquired courtesy of The City of Toronto’s Open Data
+  Portal. It currently has 3455 rows and 37 columns.
 
--   *building\_permits*: Acquired courtesy of The City of Vancouver’s
-    Open Data Portal. It currently has 20680 rows and 14 columns.
+- *building_permits*: Acquired courtesy of The City of Vancouver’s Open
+  Data Portal. It currently has 20680 rows and 14 columns.
 
--   *cancer\_sample*: Acquired courtesy of UCI Machine Learning
-    Repository. It currently has 569 rows and 32 columns.
+- *cancer_sample*: Acquired courtesy of UCI Machine Learning Repository.
+  It currently has 569 rows and 32 columns.
 
--   *flow\_sample*: Acquired courtesy of The Government of Canada’s
-    Historical Hydrometric Database. It currently has 218 rows and 7
-    columns.
+- *flow_sample*: Acquired courtesy of The Government of Canada’s
+  Historical Hydrometric Database. It currently has 218 rows and 7
+  columns.
 
--   *parking\_meters*: Acquired courtesy of The City of Vancouver’s Open
-    Data Portal. It currently has 10032 rows and 22 columns.
+- *parking_meters*: Acquired courtesy of The City of Vancouver’s Open
+  Data Portal. It currently has 10032 rows and 22 columns.
 
--   *steam\_games*: Acquired courtesy of Kaggle. It currently has 40833
-    rows and 21 columns.
+- *steam_games*: Acquired courtesy of Kaggle. It currently has 40833
+  rows and 21 columns.
 
--   *vancouver\_trees*: Acquired courtesy of The City of Vancouver’s
-    Open Data Portal. It currently has 146611 rows and 20 columns.
+- *vancouver_trees*: Acquired courtesy of The City of Vancouver’s Open
+  Data Portal. It currently has 146611 rows and 20 columns.
 
 **Things to keep in mind**
 
--   We hope that this project will serve as practice for carrying our
-    your own *independent* data analysis. Remember to comment your code,
-    be explicit about what you are doing, and write notes in this
-    markdown document when you feel that context is required. As you
-    advance in the project, prompts and hints to do this will be
-    diminished - it’ll be up to you!
+- We hope that this project will serve as practice for carrying our your
+  own *independent* data analysis. Remember to comment your code, be
+  explicit about what you are doing, and write notes in this markdown
+  document when you feel that context is required. As you advance in the
+  project, prompts and hints to do this will be diminished - it’ll be up
+  to you!
 
--   Before choosing a dataset, you should always keep in mind **your
-    goal**, or in other ways, *what you wish to achieve with this data*.
-    This mini data-analysis project focuses on *data wrangling*,
-    *tidying*, and *visualization*. In short, it’s a way for you to get
-    your feet wet with exploring data on your own.
+- Before choosing a dataset, you should always keep in mind **your
+  goal**, or in other ways, *what you wish to achieve with this data*.
+  This mini data-analysis project focuses on *data wrangling*,
+  *tidying*, and *visualization*. In short, it’s a way for you to get
+  your feet wet with exploring data on your own.
 
 And that is exactly the first thing that you will do!
 
@@ -131,8 +134,7 @@ understand your data.
 
 <!-------------------------- Start your work below ---------------------------->
 
-1: building\_permits 2: cancer\_sample 3: steam\_games 4:
-vancouver\_trees
+1: building_permits 2: cancer_sample 3: steam_games 4: vancouver_trees
 
 <!----------------------------------------------------------------------------->
 
@@ -149,8 +151,10 @@ comments outside of the code chunk?
 
 <!-------------------------- Start your work below ---------------------------->
 
-    ### EXPLORE HERE ###
-    glimpse(building_permits)
+``` r
+### EXPLORE HERE ###
+glimpse(building_permits)
+```
 
     ## Rows: 20,680
     ## Columns: 14
@@ -169,7 +173,9 @@ comments outside of the code chunk?
     ## $ year                        <dbl> 2017, 2017, 2017, 2017, 2017, 2017, 2017, …
     ## $ bi_id                       <dbl> 524, 535, 539, 541, 543, 546, 547, 548, 54…
 
-    glimpse(cancer_sample)
+``` r
+glimpse(cancer_sample)
+```
 
     ## Rows: 569
     ## Columns: 32
@@ -206,7 +212,9 @@ comments outside of the code chunk?
     ## $ symmetry_worst          <dbl> 0.4601, 0.2750, 0.3613, 0.6638, 0.2364, 0.3985…
     ## $ fractal_dimension_worst <dbl> 0.11890, 0.08902, 0.08758, 0.17300, 0.07678, 0…
 
-    glimpse(steam_games)
+``` r
+glimpse(steam_games)
+```
 
     ## Rows: 40,833
     ## Columns: 21
@@ -232,7 +240,9 @@ comments outside of the code chunk?
     ## $ original_price           <dbl> 19.99, 29.99, 39.99, 44.99, 0.00, NA, 59.99, …
     ## $ discount_price           <dbl> 14.99, NA, NA, NA, NA, 35.18, 70.42, 17.58, N…
 
-    glimpse(vancouver_trees)
+``` r
+glimpse(vancouver_trees)
+```
 
     ## Rows: 146,611
     ## Columns: 20
@@ -265,7 +275,7 @@ to choose this one? Briefly explain your choice below.
 
 <!-------------------------- Start your work below ---------------------------->
 
-I will choose the cancer\_sample data set, because it has both numeric
+I will choose the cancer_sample data set, because it has both numeric
 and category variables, it is easy to use and the variable names are
 clear.
 <!----------------------------------------------------------------------------->
@@ -349,28 +359,28 @@ sufficient comments for a reader to understand your reasoning and code.
 
 1.  Plot the distribution of a numeric variable.
 
-<!-- -->
-
-    ggplot(cancer_sample, aes(x=radius_mean)) + 
-      geom_histogram(color="white", fill="cornflowerblue") +
-      labs(x="Mean radius of nuclei",
-           title="Histogram of mean radius of nuclei",
-           ylab="Frequency")
+``` r
+ggplot(cancer_sample, aes(x=radius_mean)) + 
+  geom_histogram(color="white", fill="cornflowerblue") +
+  labs(x="Mean radius of nuclei",
+       title="Histogram of mean radius of nuclei",
+       ylab="Frequency")
+```
 
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
-![](Milestone_1_files/figure-markdown_strict/unnamed-chunk-3-1.png)
+![](Milestone_1_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 The histogram tells us that the distribution of the mean radius of
 nuclei is right skewed, it ranges from 0 to 30, the median mean radius
 is around 12.
 
-1.  Investigate how many missing values there are per variable. Can you
+3.  Investigate how many missing values there are per variable. Can you
     find a way to plot this?
 
-<!-- -->
-
-    colSums(is.na(cancer_sample))
+``` r
+colSums(is.na(cancer_sample))
+```
 
     ##                      ID               diagnosis             radius_mean 
     ##                       0                       0                       0 
@@ -397,28 +407,28 @@ is around 12.
 
 As we can see from the result, there is no missing value in each column.
 
-1.  Explore the relationship between 2 variables in a plot.
+4.  Explore the relationship between 2 variables in a plot.
 
-<!-- -->
+``` r
+ggplot(cancer_sample, aes(x=diagnosis, y=radius_mean, 
+                          fill=diagnosis)) + geom_boxplot() +
+  labs(y="Mean radius of nuclei",
+  title="Boxplot of Mean radius of nuclei")
+```
 
-    ggplot(cancer_sample, aes(x=diagnosis, y=radius_mean, 
-                              fill=diagnosis)) + geom_boxplot() +
-      labs(y="Mean radius of nuclei",
-      title="Boxplot of Mean radius of nuclei")
+![](Milestone_1_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
-![](Milestone_1_files/figure-markdown_strict/unnamed-chunk-5-1.png)
-
-1.  Use a density plot to explore any of your variables (that are
+8.  Use a density plot to explore any of your variables (that are
     suitable for this type of plot).
 
-<!-- -->
+``` r
+ggplot(cancer_sample, aes(x=texture_mean, fill=diagnosis)) +
+  geom_density(fill="pink") +
+  labs(x="Mean texture of nuclei",
+       title="Density plot of mean texture of nuclei")
+```
 
-    ggplot(cancer_sample, aes(x=texture_mean, fill=diagnosis)) +
-      geom_density(fill="pink") +
-      labs(x="Mean texture of nuclei",
-           title="Density plot of mean texture of nuclei")
-
-![](Milestone_1_files/figure-markdown_strict/unnamed-chunk-6-1.png)
+![](Milestone_1_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
 <!----------------------------------------------------------------------------->
 
@@ -434,15 +444,15 @@ Write the 4 questions and any additional comments below.
 
 Research Questions:
 
--   1.  How is the mean radius of nuclei related to the diagnosis?
+- 1.  How is the mean radius of nuclei related to the diagnosis?
 
--   1.  Which factors has the most significant effect on the diagnosis?
+- 2.  Which factors has the most significant effect on the diagnosis?
 
--   1.  Is there any difference in the average symmetry\_mean between
-        the malignant cancer and benign cancer?
+- 3.  Is there any difference in the average symmetry_mean between the
+      malignant cancer and benign cancer?
 
--   1.  Is there any difference in the average compactness\_worst
-        between the malignant cancer and benign cancer?
+- 4.  Is there any difference in the average compactness_worst between
+      the malignant cancer and benign cancer?
 
 <!----------------------------->
 
@@ -469,13 +479,13 @@ repository on GitHub.
 
 Minimum contents of the README file:
 
--   In a sentence or two, explains what this repository is, so that
-    future-you or someone else stumbling on your repository can be
-    oriented to the repository.
--   In a sentence or two (or more??), briefly explains how to engage
-    with the repository. You can assume the person reading knows the
-    material from STAT 545A. Basically, if a visitor to your repository
-    wants to explore your project, what should they know?
+- In a sentence or two, explains what this repository is, so that
+  future-you or someone else stumbling on your repository can be
+  oriented to the repository.
+- In a sentence or two (or more??), briefly explains how to engage with
+  the repository. You can assume the person reading knows the material
+  from STAT 545A. Basically, if a visitor to your repository wants to
+  explore your project, what should they know?
 
 Once you get in the habit of making README files, and seeing more README
 files in other projects, you’ll wonder how you ever got by without them!
@@ -485,16 +495,16 @@ They are tremendously helpful.
 
 All output is readable, recent and relevant:
 
--   All Rmd files have been `knit`ted to their output md files.
--   All knitted md files are viewable without errors on Github. Examples
-    of errors: Missing plots, “Sorry about that, but we can’t show files
-    that are this big right now” messages, error messages from broken R
-    code
--   All of these output files are up-to-date – that is, they haven’t
-    fallen behind after the source (Rmd) files have been updated.
--   There should be no relic output files. For example, if you were
-    knitting an Rmd to html, but then changed the output to be only a
-    markdown file, then the html file is a relic and should be deleted.
+- All Rmd files have been `knit`ted to their output md files.
+- All knitted md files are viewable without errors on Github. Examples
+  of errors: Missing plots, “Sorry about that, but we can’t show files
+  that are this big right now” messages, error messages from broken R
+  code
+- All of these output files are up-to-date – that is, they haven’t
+  fallen behind after the source (Rmd) files have been updated.
+- There should be no relic output files. For example, if you were
+  knitting an Rmd to html, but then changed the output to be only a
+  markdown file, then the html file is a relic and should be deleted.
 
 (0.5 point deduction if any of the above criteria are not met. 1 point
 deduction if most or all of the above criteria are not met.)
